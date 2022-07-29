@@ -3,10 +3,12 @@ import './Comentario.css';
 
 //JSX - código parecido com HTML dentro do JS.
 // class do HTML por exemplo é className
-const Comentario = () => (
+const Comentario = props => (
     <div className='Comentario'>
-        <div>Hello</div>
-        <div>I am a component</div>
+        <h2>{props.name}</h2>
+        <p>{props.email}</p>
+        <p>{props.children}</p>
+        <p>{props.date.toString()}</p>
     </div>
 );
 
